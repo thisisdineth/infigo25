@@ -7,8 +7,6 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 /* ======================================
 *       TABLE OF CONTENT
@@ -69,11 +67,65 @@ ol {
     radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
     radial-gradient(at 100% -59%, rgb(86, 26, 61) 0px, transparent 50%);
 }
+.hidden {
+    display: none;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+
+.quizbg{
+    background-color:hsla(240,33%,3%,1);
+    background-image:
+    radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 100% -59%, rgb(86, 72, 26) 0px, transparent 50%);
+}
+.event-link {
+    display: block; /* Ensures the div remains clickable */
+    text-decoration: none; /* Removes default link styling */
+    color: inherit; /* Keeps the text color unchanged */
+}
 .posterbg{
     background-color:hsla(240,33%,3%,1);
     background-image:
     radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
     radial-gradient(at 100% -59%, hsla(233,54%,22%,1) 0px, transparent 50%);
+}
+.ebg{
+    background-color:hsla(240,33%,3%,1);
+    background-image:
+    radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 100% -59%, rgba(190, 218, 28, 0.363) 0px, transparent 50%);
+}
+.algobg{
+    background-color:hsla(240,33%,3%,1);
+    background-image:
+    radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 100% -59%, rgb(26, 86, 49) 0px, transparent 50%);
+}
+.threebg{
+    background-color:hsla(240,33%,3%,1);
+    background-image:
+    radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 100% -59%, rgb(86, 26, 39) 0px, transparent 50%);
+}
+.webbg{
+    background-color:hsla(240,33%,3%,1);
+    background-image:
+    radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 100% -59%, rgb(36, 50, 175) 0px, transparent 50%);
+}
+.vidbg{
+    background-color:hsla(240,33%,3%,1);
+    background-image:
+    radial-gradient(at 7% 97%, hsla(240,43%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 100% -59%, rgba(36, 175, 168, 0.521) 0px, transparent 50%);
 }
 
 body {
@@ -307,7 +359,7 @@ a {
 }
 .preloader-wrap img {
     display: block;
-    max-width: 100%;
+    max-width: 500px;
 }
 
 
@@ -676,7 +728,7 @@ a {
     top: 0;
 }
 .hamburg-menu {
-    border: 2.5px solid #ffffff;
+    border: 2px solid #ffffff;
     width: 60px;
     height: 60px;
     display: flex;
@@ -688,7 +740,10 @@ a {
     justify-content: center;
     border-radius: 50%;
     gap: 5px;
-    background: #1a1a1a00;
+    background: rgba(26, 26, 26, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Applies blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+
     cursor: pointer;
     transform: scale(0);
     transition: .3s;
@@ -753,6 +808,14 @@ a {
     top: 0;
     height: 100%;
 }
+
+.spiderman{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .hero-sec > .custom-container {
     /*max-width: 1296px;*/
     max-width: 100%;
@@ -800,24 +863,17 @@ a {
     line-height: 20px;
 }
 
-
-
-
 .hero-sec .hero-bottom h2 {
-    background-image: linear-gradient(90deg, #ffffff 16%, #c886ff 140%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(90deg, #ffffff 16%, #ff86b4 140%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 150px;
     line-height: 150px;
     letter-spacing: -0.04em;
-    font-family: 'infigs';
-    font-weight: 300;
     padding: 14px;
     margin: -14px;
 }
 .hero-sec .hero-bottom h2:nth-child(2) {
-    font-family: var(--Urbanist);
     font-style: normal;
 }
 .hero-sec .hero-bottom .left {
@@ -867,7 +923,7 @@ a {
     margin-top: 58px;
 }
 .about-sec .funfacts-wrap .funfact-box:nth-child(3) {
-    margin-top: 92px;
+    margin-top: 58px;
 }
 .funfact-box {
     position: relative;
@@ -1731,12 +1787,11 @@ a {
 }
 .faq-lists {
     position: relative;
-    background: linear-gradient(0deg, #1f1f1f 0%, #000000 35%, #000000 65%, #1f1f1f 100%);
+    background: linear-gradient(0deg, #0f0b1e 0%, rgb(5 5 10) 35%, rgb(5 5 10) 65%, rgb(15 11 30) 100%);
     border-radius: 16px;
 }
 .faq-lists .shape_img img {
     display: block;
-    object-fit: cover;
     width: 100%;
     height: 100%;
     transform: rotate(36deg);
@@ -2340,6 +2395,12 @@ a {
         background: #434343;
         box-shadow: -1200px 0 0 1200px #ffffff;
     }
+}
+
+.funfacts-wrap a {
+    display: block; /* Ensures the <a> tag wraps the entire box */
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Keeps text color consistent */
 }
 /** FF*/
 .contact-form .input-group-budget #pi_input::-moz-range-progress {

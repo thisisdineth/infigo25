@@ -9,7 +9,7 @@
     <title>INFIGO'25</title>
     
     <!-- ===== Favicon ===== -->
-    <link rel="icon" type="image/x-icon" href="logo prop.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -73,11 +73,10 @@
                 <div class="header-sidebar-bottom">
                     <ul>
                         <!-- Social icons -->
-                        <li><a target="_blank" href="https://dribbble.com/"><i class="lab la-dribbble"></i></a></li>
-                        <li><a target="_blank" href="https://www.facebook.com/"><i class="lab la-facebook-f"></i></a></li>
-                        <li><a target="_blank" href="https://twitter.com/"><i class="lab la-twitter"></i></a></li>
-                        <li><a target="_blank" href="https://instagram.com/"><i class="lab la-instagram"></i></a></li>
-                        
+                        <li><a target="_blank" href="https://www.youtube.com/@mcicts"><i class="lab la-youtube"></i></a></li>
+                        <li><a target="_blank" href="https://facebook.com/mcicts.official/"><i class="lab la-facebook-f"></i></a></li>
+                        <li><a target="_blank" href="https://whatsapp.com/channel/0029VaUdVoZ6mYPJ6DFsYE0q"><i class="lab la-whatsapp"></i></a></li>
+                        <li><a target="_blank" href="https://instagram.com/mcicts"><i class="lab la-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -112,11 +111,11 @@
             <!-- ===== Menu End ===== -->
         <!-- ===== Hero Start ===== -->
         <div class="hero-sec" id="hero">
-            <div class="custom-container">
+            <div class="custom-containerbg">
                 <div class="hero-inner">
                     <!-- Video Section -->
                     <div class="hero-video" >
-                    <img src="assets\images\Frame 1 (1).svg" alt="bg">
+                    <img class="spiderman" src="assets\images/bg.jpg" alt="bg">
                     </div>
 
                     <!-- Hero Top Section -->
@@ -139,7 +138,7 @@
                             <h2>INFIGO'25</h2>
                         </div>
                         <!-- Button Section -->
-                        <a href="contact.html" class="theme-btn">
+                        <a href="register.html" class="theme-btn">
                             Register Now!
                             <img src="assets/images/btn-arrow.svg" alt="icon">
                         </a>
@@ -164,39 +163,41 @@
                 </div>
 
                 <div class="funfacts-wrap">
-                        <div class="funfact-box " data-aos="fade-up">
-                            <img src="assets\images\untitled1.jpg" alt="funfact" class="overlay" >
+                    
+                    <div class="funfact-box " data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='quiz.html'">
+                            <img src="assets\images\untitled1.jpg" alt="funfact" class="overlay">
                             <div class="funfact-header">
                             <span class="title">Teams</span>
                         </div>
-                         <div class="funfact-footer" >
+                         <div class="funfact-footer">
                             <span class="number">Quiz<span></span></span>
                             <img src="assets/images/angle-icon-1.svg" alt="icon">
                         </div>
                     </div>
-                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='logodesign.html'">
                         <img src="assets\images\untitled2.jpg" alt="funfact" class="overlay">
                         <div class="funfact-header">
                             <span class="title">Individual</span>
                         </div>
                         <div class="funfact-footer">
-                            <span class="number">Logo<br>Design<span></span></span>
+                            <span class="number">Logo Design<span></span></span>
                             <img src="assets/images/angle-icon-1.svg" alt="icon">
                         </div>
                     </div>
-                    <a href="poster-design.html">
-                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="400">
-                        <img src="assets\images\untitled3.jpg" alt="funfact" class="overlay">
+                    
+                    <div class="funfact-box " data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='poster-design.html'">
+                        <img src="assets\images\untitled1.jpg" alt="funfact" class="overlay">
                         <div class="funfact-header">
-                            <span class="title">Individual</span>
-                        </div>
-                        <div class="funfact-footer">
-                            <span class="number">Poster Design<span></span></span>
-                            <img src="assets/images/angle-icon-1.svg" alt="icon">
-                        </div>
-                    </div></a>
+                        <span class="title">Individual</span>
+                    </div>
+                     <div class="funfact-footer">
+                        <span class="number">Poster Design<span></span></span>
+                        <img src="assets/images/angle-icon-1.svg" alt="icon">
+                    </div>
+                </div>
 
-                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="funfact-box" data-aos="fade-up" onclick="window.location.href='algorithm.html'">
                         <img src="assets\images\untitled4.jpg" alt="funtact" class="overlay">
                         <div class="funfact-header">
                             <span class="title">Individual</span>
@@ -206,7 +207,7 @@
                             <img src="assets/images/angle-icon-1.svg" alt="icon">
                         </div>
                     </div>
-                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600" onclick="window.location.href='3ddesign.html'">
                         <img src="assets\images\untitled5.jpg" alt="funtact" class="overlay">
                         <div class="funfact-header">
                             <span class="title">Individual</span>
@@ -216,23 +217,33 @@
                             <img src="assets/images/angle-icon-1.svg" alt="icon">
                         </div>
                     </div>
-                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600"onclick="window.location.href='videditing.html'">
                         <img src="assets\images\untitled7.jpg" alt="funtact" class="overlay">
                         <div class="funfact-header">
                             <span class="title">Teams</span>
                         </div>
                         <div class="funfact-footer">
-                            <span class="number">PC Assembly<span></span></span>
+                            <span class="number">Video Editing<span></span></span>
                             <img src="assets/images/angle-icon-1.svg" alt="icon">
                         </div>
                     </div>
-                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600" onclick="window.location.href='web.html'">
                         <img src="assets\images\untitled8.jpg" alt="funtact" class="overlay">
                         <div class="funfact-header">
                             <span class="title">Individual</span>
                         </div>
                         <div class="funfact-footer">
-                            <span class="number">Web Dev<span></span></span>
+                            <span class="number">Web Design<span></span></span>
+                            <img src="assets/images/angle-icon-1.svg" alt="icon">
+                        </div>
+                    </div>
+                    <div class="funfact-box" data-aos="fade-up" data-aos-delay="600" onclick="window.location.href='esports.html'">
+                        <img src="assets\images\untitled1.jpg" alt="funtact" class="overlay">
+                        <div class="funfact-header">
+                            <span class="title">Teams</span>
+                        </div>
+                        <div class="funfact-footer">
+                            <span class="number">E Sports<span></span></span>
                             <img src="assets/images/angle-icon-1.svg" alt="icon">
                         </div>
                     </div>
@@ -287,11 +298,13 @@
                         <p>
                             <span class="required">*</span> Whether you have a question, or want to discuss a potential project, our team at <br> infigo is here to help. Please fill out the form below!!!
                         </p>
-                        <form id="contact-form" action="https://wpriverthemes.com/HTML/infigo/assets/mail/mailer.php" method="POST" class="contact-form">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form" onsubmit="submitForm(event)">
+                            <input type="hidden" name="access_key" value="aa5c3451-b3fa-4604-ba91-85fbe8cb6805">
+                            <input type="hidden" name="from_name" value="INFIGO">
                             <div class="input-group">
                                 <input type="text" name="name" placeholder="Name" required>
                             </div>
-
+                        
                             <div class="col-2">
                                 <div class="input-group">
                                     <input type="email" name="email" placeholder="E-mail" required>
@@ -304,7 +317,7 @@
                                 <textarea name="message" id="message" placeholder="Message" required></textarea>
                             </div>
                             <div style="width: 20px; display: inline-block;"></div>
-
+                            <div class="h-captcha" data-captcha="true"></div>
                             <div class="input-group">
                                 <button type="submit" class="theme-btn">
                                     Send Message
@@ -312,41 +325,20 @@
                                 </button>
                             </div>
                         </form>
-                        <div id="result"></div>
+                        <p id="confirmation-message" style="display:none; color: white;">Submitted</p>
+
                     </div>
                 </div>
                 <div class="right">
                     <div class="img-box">
-                        <img src="logo prop.png" alt="contact-img">
+                        <img src="assets/images/logo prop.png" alt="contact-img">
                     </div>
                 </div>
             </div>
         </div>
         <!-- ===== Contact End ===== -->
 
-        <!-- ===== Partner Start ===== -->
-        <div class="our-partner-sec">
-            <ul>
-                <li><img src="assets/images/client1.svg" alt="client"></li>
-                <li><img src="assets/images/client2.svg" alt="client"></li>
-                <li><img src="assets/images/client3.svg" alt="client"></li>
-                <li><img src="assets/images/client4.svg" alt="client"></li>
-                <li><img src="assets/images/client5.svg" alt="client"></li>
-                <li><img src="assets/images/client6.svg" alt="client"></li>
-                <li><img src="assets/images/client1.svg" alt="client"></li>
-                <li><img src="assets/images/client2.svg" alt="client"></li>
-                <li><img src="assets/images/client3.svg" alt="client"></li>
-                <li><img src="assets/images/client4.svg" alt="client"></li>
-                <li><img src="assets/images/client5.svg" alt="client"></li>
-                <li><img src="assets/images/client6.svg" alt="client"></li>
-                <li><img src="assets/images/client1.svg" alt="client"></li>
-                <li><img src="assets/images/client2.svg" alt="client"></li>
-                <li><img src="assets/images/client3.svg" alt="client"></li>
-                <li><img src="assets/images/client4.svg" alt="client"></li>
-                <li><img src="assets/images/client5.svg" alt="client"></li>
-                <li><img src="assets/images/client6.svg" alt="client"></li>
-            </ul>
-        </div>
+       
         <!-- ===== Partner End ===== -->
 
         <!-- ===== Footer Start ===== -->
@@ -400,7 +392,7 @@
                                             <a data-aos="slide-up" data-aos-duration="700" href="mailto:MindBlowingArt2692@gmail.com" class="with-border">Dulina Nethula</a>
                                         </div>
                                         <div class="split-text-anim">
-                                            <a data-aos="slide-up" data-aos-duration="700" href="mailto:MindBlowingArt2692@gmail.com" class="with-border">Tharuk Renuja</a>
+                                            <a data-aos="slide-up" data-aos-duration="700" href="mailto:MindBlowingArt2692@gmail.com" class="with-border">Kavishka Manohara</a>
                                         </div>
                                     </div>
                                 </div>
@@ -414,23 +406,23 @@
                                 <h4>Social</h4>
                                 <ul>
                                     <li>
-                                        <a class="with-border" href="https://instagram.com/" target="_blank">
+                                        <a class="with-border" href="https://instagram.com/mcicts" target="_blank">
                                             <img src="assets/images/btn-arrow.svg" alt="icon"> Instagram
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="with-border" href="https://twitter.com/" target="_blank">
-                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Twitter
+                                        <a class="with-border" href="https://facebook.com/mcicts.official/" target="_blank">
+                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Facebook
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="with-border" href="https://behance.com/" target="_blank">
-                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Behance
+                                        <a class="with-border" href="https://www.youtube.com/@mcicts" target="_blank">
+                                            <img src="assets/images/btn-arrow.svg" alt="icon"> YouTube
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="with-border" href="https://dribbble.com/" target="_blank">
-                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Dribbble
+                                        <a class="with-border" href="https://whatsapp.com/channel/0029VaUdVoZ6mYPJ6DFsYE0q" target="_blank">
+                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Whatsapp
                                         </a>
                                     </li>
                                 </ul>
@@ -447,6 +439,23 @@
         <!-- ===== Footer End ===== -->
 
     </main>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            // Show the confirmation message
+            const confirmationMessage = document.getElementById('confirmation-message');
+            confirmationMessage.style.display = 'block';
+    
+            // Hide the confirmation message after 3 seconds
+            setTimeout(() => {
+                confirmationMessage.style.display = 'none';
+            }, 2000);
+    
+            // Clear the form fields
+            document.getElementById('contact-form').reset();
+        }
+    </script>
     <!-- ===== Main End ===== -->
 
     <!-- ===== Scripts ===== -->
@@ -462,5 +471,5 @@
     <script src="assets/js/ajax-form.js"></script>
 </body>
 
-<!-- Mirrored from wpriverthemes.com/HTML/infigo/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 04:15:46 GMT -->
+<!-- Mirrored from wpriverthemes.com/HTML/infigo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 04:15:46 GMT -->
 </html>

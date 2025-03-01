@@ -224,8 +224,8 @@
                         scrollTrigger: {
                             opacity: 1, // Initial state
                             trigger: char,
-                            start: 'top 75%',
-                            end: 'top 10%',
+                            start: 'top 80%',
+                            end: 'top -1%',
                             scrub: true,
                             marker: false
                         },

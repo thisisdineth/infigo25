@@ -10,7 +10,7 @@
     <title>INFIGO'25</title>
     
     <!-- ===== Favicon ===== -->
-    <link rel="icon" type="image/x-icon" href="logo prop.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -57,12 +57,12 @@
                         <nav class="navbar">
                             <ul class="menu">
                                 <li>
-                                    <a href="home-2.html">Home <span></span></a>
+                                    <a href="index.html">Home <span></span></a>
                                 </li>
                                 <li class="dropdown-menu-item">
                                     <a href="#">Competitions <i class="las la-angle-down"></i></a>
                                     <ul class="dropdown-list">
-                                        <li><a href="home-2.html">Poster Designing</a></li>
+                                        <li><a href="index.html">Poster Designing</a></li>
                                         <li><a href="about.html">Logo Designing</a></li>
                                         <li><a href="projects.html">Photo Manipulation</a></li>
                                         <li><a href="project-single1.html">PC Assembly</a></li>
@@ -71,7 +71,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="home-2.html">Contact<span></span></a>
+                                    <a href="index.html">Contact<span></span></a>
                                 </li>
                             </ul>
                         </nav>
@@ -107,8 +107,9 @@
         
 <!-- ===== Contact Start ===== -->
 <div class="contact-sec-2">
+    
     <div class="custom-container">
-      <form id="registrationForm" class="contact-form" action="https://script.google.com/macros/s/AKfycbxx8WOCvmsHzA-EMCBOzjCaVofLvfEbl4slWWwEjkGNYJU5Xlo1dyh8PLrTY5KDB7p1/exec" method="POST">
+      <form id="registrationForm" class="contact-form" action="https://script.google.com/macros/s/AKfycbwqXmISoCaZ5Jm2d_OwdSJ4JwlqSX28YqY2fc4uavOQt7RbPrUkABmwIQ2c4B_UnlwVmQ/exec" method="POST">
         <div class="col-2">
           <div class="input-group">
             <label for="first_name">First Name*</label>
@@ -126,8 +127,8 @@
           </div>
           
           <div class="input-group">
-            <label for="email">Phone Number*</label>
-            <input type="text" id="phone" name="phone" placeholder="0788422153" required>
+            <label for="email">Whatsapp No*</label>
+            <input type="text" id="phone" name="phone" placeholder="07xxxxxxxx" required>
           </div>
         </div>
         <div class="col-2">
@@ -144,12 +145,12 @@
           <label for="app_design">Events that you wish to Register*</label>
           <div class="checkbox-btns">
             <div class="checkbox-btn">
-              <input type="checkbox" name="service_type" id="app_design" value="App Design">
+              <input type="checkbox" name="service_type" id="poster_design" value="Poster Design">
               <span class="checkbox-marker"><i class="las la-check"></i></span>
               <span class="checkbox-label">Poster Design</span>
             </div>
             <div class="checkbox-btn">
-              <input type="checkbox" name="service_type" id="web_design" value="Web Design">
+              <input type="checkbox" name="service_type" id="web_design" value="Web Development">
               <span class="checkbox-marker"><i class="las la-check"></i></span>
               <span class="checkbox-label">Web Development</span>
             </div>
@@ -169,53 +170,137 @@
               <span class="checkbox-label">Photo Manipulation</span>
             </div>
             <div class="checkbox-btn">
-              <input type="checkbox" name="service_type" id="assembly" value="PC Assembly">
+              <input type="checkbox" name="service_type" id="videdit" value="Video Editing">
               <span class="checkbox-marker"><i class="las la-check"></i></span>
-              <span class="checkbox-label">PC Assembly</span>
+              <span class="checkbox-label">Video Editing</span>
             </div>
             <div class="checkbox-btn">
               <input type="checkbox" name="service_type" id="3d" value="3D Design">
               <span class="checkbox-marker"><i class="las la-check"></i></span>
               <span class="checkbox-label">3D Design</span>
             </div>
+            <div class="checkbox-btn">
+              <input type="checkbox" name="service_type" id="e sports" value="E Sports">
+              <span class="checkbox-marker"><i class="las la-check"></i></span>
+              <span class="checkbox-label">E Sports</span>
+            </div>
           </div>
         </div>
+  <!-- Participants Section -->
+<div id="quiz-details" style="display: none;">
+    <div class="col-2">
+      <div class="input-group">
+        <label for="lead_name">Team Leader Full Name </label>
+        <input type="text" name="lead_name" id="lead_name" placeholder="Yewan Ladduwahetty">
+      </div>
+      <div class="input-group">
+        <label for="lead_phone">Team Leader Whatsapp No*</label>
+        <input type="text" name="lead_phone" id="lead_phone" placeholder="07xxxxxxxx">
+      </div>
+    </div>
+    <div style="width: 25px; display: inline-block;"></div>
+    <div class="col-2">
+      <div class="input-group">
+        <label for="member2_name">Member 2*</label>
+        <input type="text" name="member2_name" id="member2_name" placeholder="Dulina Nethula">
+      </div>
+      <div class="input-group">
+        <label for="member2_phone">Member 2 Whatsapp No*</label>
+        <input type="text" name="member2_phone" id="member2_phone" placeholder="07xxxxxxxx">
+      </div>
+    </div>
+    <div style="width: 25px; display: inline-block;"></div>
+    <div class="col-2">
+      <div class="input-group">
+        <label for="member3_name">Member 3*</label><span class="required">*</span>
+        <input type="text" name="member3_name" id="member3_name" placeholder="Kavishka Manohara">
+      </div>
+      <div class="input-group">
+        <label for="member3_phone">Member 3 Whatsapp No<span class="required">*</span></label>
+        <input type="text" name="member3_phone" id="member3_phone" placeholder="07xxxxxxxx">
+      </div>
+    </div>
+    <div style="width: 25px; display: inline-block;"></div>
+    <div class="col-2">
+      <div class="input-group">
+        <label for="member4_name">Member 4*</label>
+        <input type="text" name="member4_name" id="member4_name" placeholder="Risandu Chathmin">
+      </div>
+      <div class="input-group">
+        <label for="member4_phone">Member 4 Whatsapp No*</label>
+        <input type="text" name="member4_phone" id="member4_phone" placeholder="07xxxxxxxx">
+      </div>
+    </div>
+    <div style="width: 25px; display: inline-block;"></div>
+    
+  </div>
+
+  <div id="esports-form" class="hidden">
+    <div class="form-grid">
+        <div class="input-group">
+            <label for="valorant-id">PLAYER 1 <strong>|</strong> Valorant ID</label>
+            <input type="text" id="valorant1_id" name="valorant1_id" placeholder="Enter Valorant ID">
+        </div>
+        <div class="input-group">
+            <label for="player-name">PLAYER 1 <strong>|</strong> Full Name</label>
+            <input type="text" id="player1_name" name="player1_name" placeholder="Enter Full Name">
+        </div>
+        <div class="input-group">
+            <label for="phone-number">PLAYER 1 <strong>|</strong> Phone Number</label>
+            <input type="tel" id="esports1_phone" name="esports1_phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="input-group">
+            <label for="valorant-id">PLAYER 2 <strong>|</strong> Valorant ID</label>
+            <input type="text" id="valorant2_id" name="valorant2_id" placeholder="Enter Valorant ID">
+        </div>
+        <div class="input-group">
+            <label for="player-name">PLAYER 2 <strong>|</strong> Full Name</label>
+            <input type="text" id="player2_name" name="player2_name" placeholder="Enter Full Name">
+        </div>
+        <div class="input-group">
+            <label for="phone-number">PLAYER 2 <strong>|</strong> Phone Number</label>
+            <input type="tel" id="esports2_phone" name="esports2_phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="input-group">
+            <label for="valorant-id">PLAYER 3 <strong>|</strong> Valorant ID</label>
+            <input type="text" id="valorant3_id" name="valorant3_id" placeholder="Enter Valorant ID">
+        </div>
+        <div class="input-group">
+            <label for="player-name">PLAYER 3 <strong>|</strong> Full Name</label>
+            <input type="text" id="player3_name" name="player3_name" placeholder="Enter Full Name">
+        </div>
+        <div class="input-group">
+            <label for="phone-number">PLAYER 3 <strong>|</strong> Phone Number</label>
+            <input type="tel" id="esports3_phone" name="esports3_phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="input-group">
+            <label for="valorant-id">PLAYER 4 <strong>|</strong> Valorant ID</label>
+            <input type="text" id="valorant4_id" name="valorant4_id" placeholder="Enter Valorant ID">
+        </div>
+        <div class="input-group">
+            <label for="player-name">PLAYER 4 <strong>|</strong> Full Name</label>
+            <input type="text" id="player4_name" name="player4_name" placeholder="Enter Full Name">
+        </div>
+        <div class="input-group">
+            <label for="phone-number">PLAYER 4 <strong>|</strong> Phone Number</label>
+            <input type="tel" id="esports4_phone" name="esports4_phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="input-group">
+            <label for="valorant-id">PLAYER 5 <strong>|</strong> Valorant ID</label>
+            <input type="text" id="valorant5_id" name="valorant5_id" placeholder="Enter Valorant ID">
+        </div>
+        <div class="input-group">
+            <label for="player-name">PLAYER 5 <strong>|</strong> Full Name</label>
+            <input type="text" id="player5_name" name="player5_name" placeholder="Enter Full Name">
+        </div>
+        <div class="input-group">
+            <label for="phone-number">PLAYER 5 <strong>|</strong> Phone Number</label>
+            <input type="tel" id="esports5_phone" name="esports5_phone" placeholder="Enter Phone Number">
+        </div>
+    </div>
+</div>
+
   
-        <!-- Participants Section -->
-        <div id="quiz-details" style="display: none;">
-          <div class="col-2">
-            <div class="input-group">
-              <label for="lead_name">Team Leader Full Name:</label>
-              <input type="text" name="lead_name" id="lead_name" placeholder="Full Name">
-            </div>
-            <div class="input-group">
-              <label for="member1_number">Phone Number</label>
-              <input type="text" name="member1_number" id="member1_number" placeholder="+94 78 842 2153">
-            </div>
-          </div>
-          <div style="width: 20px; display: inline-block;"></div>
-          <div class="col-2">
-            <div class="input-group">
-              <label for="member2_name">Member 2:</label>
-              <input type="text" name="member2_name" id="member2_name" placeholder="Full Name">
-            </div>
-            <div class="input-group">
-              <label for="member3_name">Member 3:</label>
-              <input type="text" name="member3_name" id="member3_name" placeholder="Full Name">
-            </div>
-          </div>
-          <div style="width: 20px; display: inline-block;"></div>
-          <div class="col-2">
-            <div class="input-group">
-              <label for="member4_name">Member 4:</label>
-              <input type="text" name="member4_name" id="member4_name" placeholder="Full Name">
-            </div>
-            <div class="input-group">
-              <label for="member5_name">Member 5:</label>
-              <input type="text" name="member5_name" id="member5_name" placeholder="Full Name">
-            </div>
-          </div>
-        </div>
   
         <div class="input-group">
           <button type="submit" class="theme-btn"> Register <img src="assets/images/btn-arrow.svg" alt="icon"> </button>
@@ -242,10 +327,10 @@
             <!-- Faq lists -->
             <div class="accordion faq-lists" id="accordionExample">
                 <div class="shape_img shape_img1">
-                    <img src="assets/images/pricing-shape1.png" alt="shape">
+                    <img src="assets/images/blobs.png" alt="shape">
                 </div>
                 <div class="shape_img shape_img2">
-                    <img src="assets/images/pricing-shape2.png" alt="shape">
+                    <img src="assets/images/blobs.png" alt="shape">
                 </div>
 
                 <!-- Faq 1 -->
@@ -259,7 +344,7 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>Yes, once you register, we will add you to your respective WhatsApp group as soon as possible.
+                            <p>Yes, once you register, you will get an email containing a google drive link to upload ur submissions once the submission intake opened. After registration we will add you to your respective WhatsApp group as soon as possible.
 
                             </p>
                         </div>
@@ -330,7 +415,7 @@
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>Unfortunately, once submitted, you can’t change your selections directly. However, feel free to contact us, and we’ll assist with any changes if necessary.
+                            <p>Unfortunately, once submitted, you can’t change your selections directly.
 
                             </p>
                         </div>
@@ -378,30 +463,7 @@
         </div>
         <!-- ===== Faq End ===== -->
 
-        <!-- ===== Partner Start ===== -->
-        <div class="our-partner-sec">
-            <ul>
-                <li><img src="assets/images/client1.svg" alt="client"></li>
-                <li><img src="assets/images/client2.svg" alt="client"></li>
-                <li><img src="assets/images/client3.svg" alt="client"></li>
-                <li><img src="assets/images/client4.svg" alt="client"></li>
-                <li><img src="assets/images/client5.svg" alt="client"></li>
-                <li><img src="assets/images/client6.svg" alt="client"></li>
-                <li><img src="assets/images/client1.svg" alt="client"></li>
-                <li><img src="assets/images/client2.svg" alt="client"></li>
-                <li><img src="assets/images/client3.svg" alt="client"></li>
-                <li><img src="assets/images/client4.svg" alt="client"></li>
-                <li><img src="assets/images/client5.svg" alt="client"></li>
-                <li><img src="assets/images/client6.svg" alt="client"></li>
-                <li><img src="assets/images/client1.svg" alt="client"></li>
-                <li><img src="assets/images/client2.svg" alt="client"></li>
-                <li><img src="assets/images/client3.svg" alt="client"></li>
-                <li><img src="assets/images/client4.svg" alt="client"></li>
-                <li><img src="assets/images/client5.svg" alt="client"></li>
-                <li><img src="assets/images/client6.svg" alt="client"></li>
-            </ul>
-        </div>
-        <!-- ===== Partner End ===== -->
+      
 
          <!-- ===== Footer Start ===== -->
          <footer class="footer-area">
@@ -448,13 +510,13 @@
                                     <h4>REACH OUT TO US</h4>
                                     <div class="links">
                                         <div class="split-text-anim">
-                                            <a data-aos="slide-up" data-aos-duration="700" href="tel:+840123456789" class="with-border">Yewan Ladduwahetty</a>
+                                            <a data-aos="slide-up" data-aos-duration="700" href="tel:+94788422153" class="with-border">Yewan Ladduwahetty</a>
                                         </div>
                                         <div class="split-text-anim">
-                                            <a data-aos="slide-up" data-aos-duration="700" href="mailto:MindBlowingArt2692@gmail.com" class="with-border">Dulina Nethula</a>
+                                            <a data-aos="slide-up" data-aos-duration="700" href="tel:+94702081775" class="with-border">Dulina Nethula</a>
                                         </div>
                                         <div class="split-text-anim">
-                                            <a data-aos="slide-up" data-aos-duration="700" href="mailto:MindBlowingArt2692@gmail.com" class="with-border">Tharuk Renuja</a>
+                                            <a data-aos="slide-up" data-aos-duration="700" href="tel:+94787092024" class="with-border">Kavishka Manohara</a>
                                         </div>
                                     </div>
                                 </div>
@@ -468,23 +530,23 @@
                                 <h4>Social</h4>
                                 <ul>
                                     <li>
-                                        <a class="with-border" href="https://instagram.com/" target="_blank">
+                                        <a class="with-border" href="https://instagram.com/mcicts" target="_blank">
                                             <img src="assets/images/btn-arrow.svg" alt="icon"> Instagram
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="with-border" href="https://twitter.com/" target="_blank">
-                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Twitter
+                                        <a class="with-border" href="https://facebook.com/mcicts.official/" target="_blank">
+                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Facebook
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="with-border" href="https://behance.com/" target="_blank">
-                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Behance
+                                        <a class="with-border" href="https://www.youtube.com/@mcicts" target="_blank">
+                                            <img src="assets/images/btn-arrow.svg" alt="icon"> YouTube
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="with-border" href="https://dribbble.com/" target="_blank">
-                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Dribbble
+                                        <a class="with-border" href="https://whatsapp.com/channel/0029VaUdVoZ6mYPJ6DFsYE0q" target="_blank">
+                                            <img src="assets/images/btn-arrow.svg" alt="icon"> Whatsapp
                                         </a>
                                     </li>
                                 </ul>
@@ -505,50 +567,86 @@
     <!-- ===== Main End ===== -->
 
     <!-- ===== Scripts ===== -->
+   
     <script>
+        
         document.addEventListener("DOMContentLoaded", function () {
-          const brandingCheckbox = document.getElementById("quiz");
-          const brandingDetails = document.getElementById("quiz-details");
-          const form = document.getElementById("registrationForm");
-          const submitMessage = document.getElementById("submit");
-      
-          function toggleBrandingDetails() {
-            if (brandingCheckbox.checked) {
-              brandingDetails.style.display = "block";
-            } else {
-              brandingDetails.style.display = "none";
-              // Clear input fields when hiding
-              brandingDetails.querySelectorAll("input").forEach(input => input.value = "");
-            }
-          }
-      
-          // Run on page load (in case of form resubmission)
-          toggleBrandingDetails();
-      
-          // Add event listener to checkbox
-          brandingCheckbox.addEventListener("change", toggleBrandingDetails);
-      
-          // Handle form submission
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            let formData = new FormData(form);
-            let events = [];
-            document.querySelectorAll('input[name="service_type"]:checked').forEach(checkbox => {
-              events.push(checkbox.value);
-            });
-            formData.set("service_type", events.join(", "));
-      
-            fetch(form.action, { method: "POST", body: formData })
-              .then(response => response.text())
-              .then(data => {
-                submitMessage.innerHTML = "Response Submitted!";
-                submitMessage.style.color = "red";  // Ensure it's red
-                form.reset();
-              })
-              .catch(error => console.error('Error:', error));
-          });
+    const brandingCheckbox = document.getElementById("quiz");
+    const brandingDetails = document.getElementById("quiz-details");
+    const form = document.getElementById("registrationForm");
+    const submitMessage = document.getElementById("submit");
+
+    function toggleBrandingDetails() {
+        if (brandingCheckbox.checked) {
+            brandingDetails.style.display = "block";
+        } else {
+            brandingDetails.style.display = "none";
+            // Clear input fields when hiding
+            brandingDetails.querySelectorAll("input").forEach(input => input.value = "");
+        }
+    }
+
+    // Run on page load (in case of form resubmission)
+    toggleBrandingDetails();
+
+    // Add event listener to checkbox
+    brandingCheckbox.addEventListener("change", toggleBrandingDetails);
+
+    // Handle form submission
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Show "Submitting..." message
+        submitMessage.innerHTML = "Submitting...";
+        submitMessage.style.color = "white"; // Optional: Change color to indicate loading
+
+        let formData = new FormData(form);
+        let events = [];
+        document.querySelectorAll('input[name="service_type"]:checked').forEach(checkbox => {
+            events.push(checkbox.value);
         });
+        formData.set("service_type", events.join(", "));
+
+        fetch(form.action, { method: "POST", body: formData })
+            .then(response => response.text())
+            .then(data => {
+                submitMessage.innerHTML = "Great! Check your e-mail!";
+                submitMessage.style.color = "white"; // Change color after submission
+
+                // Reset form after submission
+                form.reset();
+
+                // Collapse quiz fields after submission
+                brandingDetails.style.display = "none";
+                brandingCheckbox.checked = false; // Uncheck the quiz box
+
+                // Remove the "submitted" text after 3 seconds
+                setTimeout(() => {
+                    submitMessage.innerHTML = "";
+                }, 3000);
+            })
+            .catch(error => {
+                submitMessage.innerHTML = "Submission failed. Please try again.";
+                submitMessage.style.color = "red";
+            });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const esportsCheckbox = document.getElementById("e sports");
+    const esportsForm = document.getElementById("esports-form");
+
+    esportsCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+            esportsForm.classList.remove("hidden");
+        } else {
+            esportsForm.classList.add("hidden");
+        }
+    });
+});
+
       </script>
+      
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
