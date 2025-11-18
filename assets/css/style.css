@@ -3090,7 +3090,7 @@ a {
 
 /* ===== # Footer ===== */
 .footer-area {
-    background: linear-gradient(135deg, var(--golden) 0%, var(--dark) 50%, var(--silver) 100%);
+    background: #0d0d0d;
     color: var(--primary);
 }
 .footer-area .footer-bottom {
