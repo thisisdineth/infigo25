@@ -874,14 +874,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-.hero-sec .school-logo,
-.hero-sec .club-logo {
-    width: 200px;
-    height: 200px;
+.hero-sec .school-logo {
+    width: 400px;
+    height: 300px;
     object-fit: contain;
+    margin: 0;
+}
+.hero-sec .club-logo {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    margin: 0 0 0 -10px;
 }
 
 .hero-sec .hero-bottom h2 {
@@ -912,8 +919,8 @@ a {
     }
     .hero-sec .school-logo,
     .hero-sec .club-logo {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     .hero-sec .hero-bottom h2 {
         font-size: 80px;
